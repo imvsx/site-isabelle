@@ -1,0 +1,159 @@
+:root {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%; /* 10px */ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #242424;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button, textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+/* Header */
+
+main {
+    width: 75%;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+header .detail {
+    color: #9852e3;
+}
+
+header .subtitle {
+    font-size: 1.8rem;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+form fieldset {
+    padding: 1.8rem;
+    font-size: 1.8rem;
+}
+
+form  fieldset legend {
+    font-weight: 700;
+    color: #9852e3;
+}
+
+section {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h3 {
+    color: #9852e3;
+    margin-bottom: 2.4rem;
+    font-size:2.4rem;
+}
+
+.list-conquistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1.8rem;
+    font-size: 1.6rem;
+    gap: 1.4rem; 
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.8rem;
+}
+
+.item-gallery {
+    border: .5rem solid #FFFFFF;
+}
+
+.item-gallery:hover {
+    transition: 0.4s;
+    transform: scale(1.09);
+    cursor: pointer;
+    border: .5rem solid #9852e3;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+footer {
+    margin-top: 3.2rem;
+    width: 80%;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE: É a adaptação da página web em certos dispositivos/tamanhos de tela */
+
+@media screen and (max-width: 720px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.sim{
+    font-size: 1.5rem;
+    text-align: justify;
+}
